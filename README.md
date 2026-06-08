@@ -1,2 +1,11 @@
-# python-data-analysis-task
-Task 1 - Load and Explore Data using Pandas
+# Task 1 - Load and Explore Data
+
+This project uses Pandas to:
+
+- Create a dataset
+- Display the first 5 rows
+- Show summary statistics
+
+## Technologies Used
+- Python
+- Pandas
