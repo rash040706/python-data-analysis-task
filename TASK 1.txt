@@ -1,0 +1,80 @@
+TASK-1 (STUDENT PERFORMANCE PREDICTOR)
+
+PYTHON CODE:
+
+
+import pandas as pd
+
+
+# Create data using lists
+hours = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+scores = [35, 45, 48, 52, 60, 68, 75, 82, 88, 95]
+
+
+
+# Create DataFrame
+student_data = pd.DataFrame({
+    "Hours_Studied": hours,
+    "Exam_Score": scores
+})
+
+
+
+# Display dataset information
+print("Dataset Preview")
+print(student_data.head())
+print("\nShape of Dataset:", student_data.shape)
+print("\nColumn Names:")
+print(student_data.columns.tolist())
+print("\nStatistical Summary:")
+print(student_data.describe())
+print("\nChecking for Missing Values:")
+print(student_data.isnull().sum())
+
+OUTPUT:
+
+Dataset Preview
+
+   Hours_Studied  Exam_Score
+
+0              1          35
+
+1              2          45
+
+2              3          48
+
+3              4          52
+
+4              5          60
+
+Shape of Dataset: (10, 2)
+
+Column Names:
+['Hours_Studied', 'Exam_Score']
+Statistical Summary:
+
+       Hours_Studied  Exam_Score
+
+count       10.00000   10.000000
+
+mean         5.50000   64.800000
+
+std          3.02765   20.026649
+
+min          1.00000   35.000000
+
+25%          3.25000   49.000000
+
+50%          5.50000   64.000000
+
+75%          7.75000   80.250000
+
+max         10.00000   95.000000
+
+Checking for Missing Values:
+
+Hours_Studied    0
+
+Exam_Score       0
+
+dtype: int64
